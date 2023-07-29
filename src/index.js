@@ -2,8 +2,9 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import userData from "./data/user.json";
+import data from "./data/data.json";
 
-const Card = () => {
+const Profile = () => {
     return (
         <div class="profile">
             <div class="description">
@@ -31,7 +32,13 @@ const Card = () => {
     );
 };
 
+const Statistics = () => {};
 
+const FriendList = () => {};
+
+const FriendListItem = () => { };
+
+const TransactionHistory = () => {};
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Card />);
+root.render(<Profile />);

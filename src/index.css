@@ -1,3 +1,7 @@
+:root {
+  --color-text-grey: rgb(118,134,150);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,7 +9,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: lightgrey;
+  background-color: rgb(231, 236, 242);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 code {
@@ -19,10 +28,12 @@ code {
   align-items: center;
   justify-content: center;
   background-color: whitesmoke;
-  width: 60%;
-  padding: 20px;
-  margin: 20px;
-  border-radius: 4px;
+  width: 260px;
+  /* padding: 20px;
+  margin: 20px; */
+  border: solid;
+  border-radius: 6px;
+  border-color: rgb(216,224,234);
 }
 
 .description {
@@ -30,37 +41,49 @@ code {
 }
 
 .avatar {
-  width: 160px;
+  width: 120px;
   max-width: 100%;
   border-radius: 50%;
+  margin-top: 20px;
 }
 
 .name {
   font-size: 20px;
   font-weight: 600;
+  line-height: 1;
   text-align: center;
 }
 
 .tag {
   text-align: center;
-  color: grey;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-text-grey);
 }
 
 .location {
-  text-align: center;
-  color: grey;
+  font-weight: 500;
+    line-height: 1;
+    color: var(--color-text-grey);
 }
 
 .stats {
   display: flex;
-  flex-direction: row;
-  background-color: darkgrey;
+  list-style-type: none;
+  gap: 20px ;
+  width: 100%;
+  background-color: rgb(243,246,249); 
+  /* background-color: tomato; */
+  margin-top: 20px;
 }
 
 .label {
-
+  margin-top: 6px;
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-grey);
 }
 
 .quantity {
-
+  color: var(--color-text-grey);
 }
