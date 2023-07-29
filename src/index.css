@@ -5,9 +5,62 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: lightgrey;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  width: 60%;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 4px;
+}
+
+.description {
+
+}
+
+.avatar {
+  width: 160px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tag {
+  text-align: center;
+  color: grey;
+}
+
+.location {
+  text-align: center;
+  color: grey;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  background-color: darkgrey;
+}
+
+.label {
+
+}
+
+.quantity {
+
 }
