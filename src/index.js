@@ -10,6 +10,7 @@ import transactions from "./data/transactions.json";
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
 import FriendList from "./components/FriendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -29,3 +30,6 @@ root.render(<Statistics stats={data} />);
 
 // Task 3
 root.render(<FriendList friends={friends} />);
+
+// Task 4
+root.render(<TransactionHistory items={transactions} />);

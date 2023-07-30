@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Profile(props) {
     return (
         <div class="profile">
@@ -25,5 +27,9 @@ function Profile(props) {
         </div>
     );
 }
+
+Profile.propTypes = {
+    props: PropTypes.object,
+};
 
 export default Profile;
