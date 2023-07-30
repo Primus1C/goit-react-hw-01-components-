@@ -1,15 +1,23 @@
 import PropTypes from "prop-types";
+import css from "./Statistics.css";
 
 const Statistics = ({ stats, title = "Upload stats" }) => {
     return (
-        <section class="statistics">
-            <h2 class="title">{title}</h2>
+        <section className="statistics">
+            <h2 className="title">{title}</h2>
 
-            <ul class="stat-list">
+            <ul className="stat-list">
                 {stats.map((element) => (
-                    <li class="item" id={element.id}>
-                        <span class="label">{element.label}</span>
-                        <span class="percentage">{element.percentage}%</span>
+                    <li
+                        className="item"
+                        key={element.id}
+                        id={element.id}
+                        style={{ backgroundColor: generateColor() }}
+                    >
+                        <span className="label">{element.label}</span>
+                        <span className="percentage">
+                            {element.percentage}%
+                        </span>
                     </li>
                 ))}
             </ul>
@@ -21,5 +29,9 @@ Statistics.propTypes = {
     stats: PropTypes.array,
     title: PropTypes.string.isRequired,
 };
+
+function generateColor() {
+    return "#" + Math.floor(Math.random() * 16777215).toString(16);
+}
 
 export default Statistics;

@@ -1,3 +1,5 @@
 .friend-list {
-    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

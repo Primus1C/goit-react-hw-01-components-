@@ -1,16 +1,37 @@
 .statistics {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    width: 460px;
+    background-color: whitesmoke;
+    border: solid;
+    border-radius: 6px;
+    border-color: rgb(216, 224, 234);
 }
 
 .title {
     text-transform: uppercase;
+    color: var(--color-text-grey);
 }
 
-.stat-list {}
+.stat-list {
+    display: flex;
+    flex-direction:row;
+  
+    
+}
 
-.item {}
+.item {
+    list-style: none;
+    width: 200px;
+    padding-bottom:  10px;
+}
 
-.label {}
+.label {
+    color: white;
+}
 
-.percentage {}
+.percentage {
+    color: white;
+    font-size: 24px;
+}
