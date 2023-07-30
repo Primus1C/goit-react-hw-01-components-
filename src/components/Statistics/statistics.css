@@ -1,0 +1,16 @@
+.statistics {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.stat-list {}
+
+.item {}
+
+.label {}
+
+.percentage {}
