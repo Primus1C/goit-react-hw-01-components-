@@ -1,10 +1,10 @@
-function Statistics(props) {
+const Statistics = ({ stats, title = "Upload stats" }) => {
     return (
         <section class="statistics">
-            <h2 class="title">Upload stats</h2>
+            <h2 class="title">{title}</h2>
 
             <ul class="stat-list">
-                {props.stats.map((element) => (
+                {stats.map((element) => (
                     <li class="item" id={element.id}>
                         <span class="label">{element.label}</span>
                         <span class="percentage">{element.percentage}%</span>
@@ -13,6 +13,6 @@ function Statistics(props) {
             </ul>
         </section>
     );
-}
+};
 
 export default Statistics;

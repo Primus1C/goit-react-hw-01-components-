@@ -9,8 +9,11 @@ import transactions from "./data/transactions.json";
 
 import Profile from "./components/Profile/Profile";
 import Statistics from "./components/Statistics/Statistics";
+import FriendList from "./components/FriendList/FriendList";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
+// Task 1
 root.render(
     <Profile
         username={user.username}
@@ -20,4 +23,9 @@ root.render(
         stats={user.stats}
     />
 );
+
+// Task 2
 root.render(<Statistics stats={data} />);
+
+// Task 3
+root.render(<FriendList friends={friends} />);
