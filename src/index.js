@@ -32,4 +32,4 @@ root.render(<Statistics stats={data} />);
 root.render(<FriendList friends={friends} />);
 
 // Task 4
-root.render(<TransactionHistory items={transactions} />);
+//root.render(<TransactionHistory items={transactions} />);
