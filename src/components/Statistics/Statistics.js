@@ -19,7 +19,7 @@ const Statistics = ({ stats, title = "Upload stats" }) => {
 
 Statistics.propTypes = {
     stats: PropTypes.array,
-    title: PropTypes.string,
+    title: PropTypes.string.isRequired,
 };
 
 export default Statistics;
