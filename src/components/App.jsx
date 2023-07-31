@@ -11,7 +11,7 @@ import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory"; 
 
 // ================= Task 1
-const App = () => {
+const App0 = () => {
     return (
         <div className="container">{
             <Profile
@@ -26,7 +26,7 @@ const App = () => {
 }
   
 // ================= Task 2
-const App2 = () => {
+const App = () => {
     return (
         <div className="container">{
             <Statistics

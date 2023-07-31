@@ -27,7 +27,7 @@ const Statistics = ({ stats, title = "Upload stats" }) => {
 
 Statistics.propTypes = {
     stats: PropTypes.array,
-    title: PropTypes.string.isRequired,
+    title: PropTypes.string,
 };
 
 function generateColor() {
