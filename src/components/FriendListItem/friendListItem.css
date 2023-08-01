@@ -1,4 +1,4 @@
-.item{
+.friendlistitem__friend-listitem{
     display: flex;
     flex-direction: row;
     padding-left: 40px;
@@ -11,7 +11,7 @@
     border-radius: 6px;
 }
 
-.statusOn {
+.friendlistitem__statusOn {
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -19,7 +19,7 @@
     background-color: green
 }
 
-.statusOff {
+.friendlistitem__statusOff {
     height: 25px;
     width: 25px;
     border-radius: 50%;
@@ -27,10 +27,10 @@
     background-color: red
 }
 
-.avatar {
+.friendlistitem__avatar {
     width: 80px;
 }
 
-.name {
+.friendlistitem__name {
     font-size: 26px;
 }

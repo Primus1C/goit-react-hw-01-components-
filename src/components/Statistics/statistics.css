@@ -1,4 +1,4 @@
-.statistics {
+.statistics__statistics {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -9,28 +9,28 @@
     border-color: rgb(216, 224, 234);
 }
 
-.title {
+.statistics__title {
     text-transform: uppercase;
     color: var(--color-text-grey);
 }
 
-.stat-list {
+.statistics__stat-list {
     display: flex;
     
     
 }
 
-.item {
+.statistics__item {
     display: block;
     padding:  10px;
     border-style: none;
 }
 
-.label {
+.statistics__label {
     color: white;
 }
 
-.percentage {
+.statistics__percentage {
     color: white;
     font-size: 24px;
 }
