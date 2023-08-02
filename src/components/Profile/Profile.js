@@ -3,26 +3,36 @@ import styles from "./Profile.css";
 
 function Profile(props) {
     return (
-        <div className="profile">
+        <div className="profile__profile">
             <div className="description">
-                <img src={props.avatar} alt="User avatar" className="avatar" />
-                <p className="name">{props.username}</p>
-                <p className="tag">{props.tag}</p>
-                <p className="location">{props.location}</p>
+                <img
+                    src={props.avatar}
+                    alt="User avatar"
+                    className="profile__avatar"
+                />
+                <p className="profile__name">{props.username}</p>
+                <p className="profile__tag">{props.tag}</p>
+                <p className="profile__location">{props.location}</p>
             </div>
 
-            <ul className="stats">
-                <li className="statItem">
-                    <span className="label">Followers</span>
-                    <span className="quantity">{props.stats.followers}</span>
+            <ul className="profile__stats">
+                <li className="profile__statItem">
+                    <span className="profile__label">Followers</span>
+                    <span className="profile__quantity">
+                        {props.stats.followers}
+                    </span>
                 </li>
-                <li className="statItem">
-                    <span className="label">Views</span>
-                    <span className="quantity">{props.stats.views}</span>
+                <li className="profile__statItem">
+                    <span className="profile__label">Views</span>
+                    <span className="profile__quantity">
+                        {props.stats.views}
+                    </span>
                 </li>
-                <li className="statItem">
-                    <span className="label">Likes</span>
-                    <span className="quantity">{props.stats.likes}</span>
+                <li className="profile__statItem">
+                    <span className="profile__label">Likes</span>
+                    <span className="profile__quantity">
+                        {props.stats.likes}
+                    </span>
                 </li>
             </ul>
         </div>

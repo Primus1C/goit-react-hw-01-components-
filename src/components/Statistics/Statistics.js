@@ -33,7 +33,7 @@ Statistics.propTypes = {
 };
 
 function generateColor() {
-    return "#" + Math.floor(Math.random() * 16777215).toString(16);
-}
+   return "#" + ((Math.random() * 0x1000000) | 0x1000000).toString(16).slice(1);
+};
 
 export default Statistics;
