@@ -11,9 +11,11 @@ import FriendList from "./FriendList/FriendList";
 import TransactionHistory from "./TransactionHistory/TransactionHistory"; 
 
 // ================= Task 1
-const App1 = () => {
+const App = () => {
     return (
-        <div className="container">{
+        <>
+            <div className="container">{
+                
             <Profile
                 username={user.username}
                 tag={user.tag}
@@ -21,38 +23,25 @@ const App1 = () => {
                 avatar={user.avatar}
                 stats={user.stats}
             />
-        }</div>
-    )
-}
-  
-// ================= Task 2
-const App2 = () => {
-    return (
-        <div className="container">{
-            <Statistics
-                stats={data}
-            />
-        }</div>
-    )
-}
+            }</div>
 
-// ================= Task 3
-const App3 = () => {
-    return (
-        <div className="container">{
-            <FriendList friends={friends}
-            />
-        }</div>
-    )
-}
+            <div className="container">{
+                <Statistics
+                    stats={data}
+                />
+            }</div>
 
-// ================= Task 4
-const App = () => {
-    return (
-        <div className="container">{
-            <TransactionHistory items={transactions}
-            />
-        }</div>
+            <div className="container">{
+                <FriendList friends={friends}
+                />
+            }</div>
+
+            <div className="container">{
+                <TransactionHistory items={transactions}
+                />
+            }</div>
+            
+        </>
     )
 }
 
