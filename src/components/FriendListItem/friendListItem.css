@@ -1,4 +1,4 @@
-.friendlistitem__friend-listitem{
+.friendlistitem__item{
     display: flex;
     flex-direction: row;
     padding-left: 40px;
